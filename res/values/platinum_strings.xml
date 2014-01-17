@@ -18,4 +18,6 @@
    <string name="build_date">PlatinumOS build date</string>
    <string name="build_date_default">2014-01-01-0000</string>
 
+   <string name="supersu_title">SuperSU</string>
+
 </resources>
