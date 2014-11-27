@@ -18,6 +18,7 @@
 -keep class com.android.settings.notification.*
 
 -keep class com.android.settings.euphoria.**
+-keep class com.android.settings.euphoria.*Settings
 -keep class com.android.settings.cyanogenmod.*Settings
 
 # Keep click responders

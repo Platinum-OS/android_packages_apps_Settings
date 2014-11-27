@@ -173,7 +173,15 @@
             android:key="@string/category_key_personal"
             android:title="@string/header_category_personal" >
 
-        <!-- Notification drawer -->
+        <!-- Custom -->
+        <dashboard-tile
+                android:id="@+id/custom_settings"
+                android:fragment="com.android.settings.euphoria.CustomSettings"
+                android:title="@string/custom_settings_title"
+                android:icon="@drawable/ic_settings_custom"
+                />
+
+        <!-- Profiles -->
         <dashboard-tile
                 android:id="@+id/notification_drawer_settings"
                 android:title="@string/notification_drawer_title"
