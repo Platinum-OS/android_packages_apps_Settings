@@ -200,6 +200,19 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+
+        String memInfo = getMemInfo();
+        if (memInfo != null) {
+            setStringSummary(KEY_DEVICE_MEMORY, memInfo);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
+        }
+
+        // Remove update settings if it is not present.
+        mUpdateSettings = (PreferenceScreen) findPreference(KEY_UPDATE_SETTINGS);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_UPDATE_SETTINGS_PACKAGE_NAME, false)) {
+            getPreferenceScreen().removePreference(mUpdateSettings);
+        }
     }
 
     @Override
