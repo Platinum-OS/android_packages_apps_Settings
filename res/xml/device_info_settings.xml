@@ -85,7 +85,7 @@
         <!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/mod_version_eos"
+                android:title="@string/mod_version_platinum"
                 android:summary="@string/mod_version_default" />
 
         <!-- Detailed build version -->

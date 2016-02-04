@@ -15,6 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen,  Mod Version -->
-    <string name="mod_version_eos">Euphoria version</string>
+    <string name="mod_version_platinum">Platinum version</string>
     <string name="mod_version_default">Unknown</string>
 </resources>

@@ -130,7 +130,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
-        setValueSummary(KEY_MOD_VERSION, "ro.eos.version");
+        setValueSummary(KEY_MOD_VERSION, "ro.platinum.version");
         findPreference(KEY_MOD_VERSION).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
