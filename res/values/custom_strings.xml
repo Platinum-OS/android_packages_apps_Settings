@@ -43,6 +43,8 @@
     <!-- Button settings  -->
     <string name="button_settings_title">Buttons</string>
 
+    <!--Power category -->
+    <string name="power_category">Power button</string>
 
     <!-- Power menu -->
     <string name="power_menu_title">Power menu</string>
