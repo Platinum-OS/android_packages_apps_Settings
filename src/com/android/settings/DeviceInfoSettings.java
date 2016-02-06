@@ -65,6 +65,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
     private static final String FILENAME_PROC_CPUINFO = "/proc/cpuinfo";
+    private static final String FILENAME_PROC_MEMINFO = "/proc/meminfo"; 
 
     private static final String KEY_MANUAL = "manual";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
@@ -75,6 +76,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
     private static final String KEY_DEVICE_PROCESSOR = "device_processor";
+    private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
@@ -199,19 +201,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
             }
-        }
-
-        String memInfo = getMemInfo();
-        if (memInfo != null) {
-            setStringSummary(KEY_DEVICE_MEMORY, memInfo);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
-        }
-
-        // Remove update settings if it is not present.
-        mUpdateSettings = (PreferenceScreen) findPreference(KEY_UPDATE_SETTINGS);
-        if (!Utils.isPackageInstalled(getActivity(), KEY_UPDATE_SETTINGS_PACKAGE_NAME, false)) {
-            getPreferenceScreen().removePreference(mUpdateSettings);
         }
     }
 
