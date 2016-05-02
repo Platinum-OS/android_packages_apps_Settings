@@ -85,6 +85,7 @@
     <!-- Platinum categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <string name="status_bar_screen_title">Status bar</string>
+    <string name="gestures_title">Gestures</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery status style</string>
@@ -106,5 +107,9 @@
     <string name="debug_LAN_category">LAN Settings</string>    
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
 </resources>
