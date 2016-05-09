@@ -162,4 +162,8 @@
     <string name="recents_clear_all_location_top_left">Top left</string>
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+
+    <!-- Show notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 </resources>
