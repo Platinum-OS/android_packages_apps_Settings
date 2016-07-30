@@ -103,12 +103,12 @@
                 />
 
         <!-- Buttons -->
-        <dashboard-tile
+        <!--<dashboard-tile
                 android:id="@+id/button_settings"
                 android:fragment="com.android.settings.ButtonSettings"
                 android:title="@string/button_settings_title"
                 android:icon="@drawable/ic_settings_buttons"
-                />
+                />-->
 
         <!-- Application Settings -->
         <dashboard-tile
@@ -182,12 +182,12 @@
                 />
 
         <!-- Profiles -->
-        <dashboard-tile
+        <!--<dashboard-tile
                 android:id="@+id/notification_drawer_settings"
                 android:title="@string/notification_drawer_title"
                 android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
                 android:icon="@drawable/ic_settings_notification_drawer"
-                />
+                />-->
 
         <!-- Location -->
         <dashboard-tile
